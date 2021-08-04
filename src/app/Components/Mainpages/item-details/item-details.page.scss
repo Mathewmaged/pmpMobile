@@ -1,0 +1,50 @@
+ion-content{
+    --background: #f2f2f2;
+}
+#mySlider{
+    height: 250px;
+    margin-bottom: 10px;
+}
+#mySlider ion-slide img{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.dataRow{
+    display: grid;
+    .title{
+        color: #011a61;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    ion-label{
+        margin-inline-start: 20px;
+    }
+    p{
+        margin-inline-start: 20px;
+        color: #00000063;
+    }
+    .cat{
+        font-size: 10px;
+    }
+    ion-button{
+        margin: auto;
+        width: fit-content;
+        margin-inline-end: 10px;
+        --background: #2d417a;
+    }
+}
+.rowModal{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    ion-col{
+        margin-block: 10px;
+        color: #011a61;
+    }
+}

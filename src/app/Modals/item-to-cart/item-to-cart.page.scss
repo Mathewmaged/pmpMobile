@@ -1,0 +1,76 @@
+ion-content{
+    --padding-top: 0px;
+}
+ion-select{
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+}
+ion-label{
+    color: #011a61;
+    margin: 10px;
+    margin-inline-start: 20px;
+}
+ion-input{
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    --padding-start: 20px;
+}
+.colButtonDe{
+    align-self: center;
+    text-align: end;
+    [dir = "rtl"] & {
+        .decreaseButton{
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding: 10px;
+            padding-block: 10px;
+            padding-inline: 20px;
+            color: #011a61;
+        }
+    }
+    [dir = "ltr"] & {
+        .decreaseButton{
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding: 10px;
+            padding-block: 10px;
+            padding-inline: 20px;
+            color: #011a61;
+        }
+    }
+}
+.colButtonIn{
+    align-self: center;
+    text-align: center;
+    [dir = "rtl"] & {
+        .increaseButton{
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding-block: 10px;
+            padding-inline: 20px;
+            color: #011a61;
+        }
+    }
+    [dir = "ltr"] & {
+        .increaseButton{
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding-block: 10px;
+            padding-inline: 20px;
+            color: #011a61;
+        }
+    }
+}
+.submitButton{
+    width: 85%;
+    margin: auto;
+    background: #011a61;
+    border-radius: 20px;
+    color: white;
+    margin-top: 25px;
+    padding-block: 18px;
+}

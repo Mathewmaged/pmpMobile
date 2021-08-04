@@ -1,0 +1,49 @@
+{ 
+  "HELLO": 
+  {
+    "hello":"مرحبا"
+  },
+  "Nav":
+  {
+    "NavTitle":"البوابة القانونية للتشريعات المصرية"
+  },
+  "Home":{
+    "cittLable":"مدن المحافظة",
+    "Learnabout":"تعرف علي",
+    "airborts":"المطارات",
+    "hotels":"الفنادق",
+    "restaurant":"المطاعم",
+    "Tourismcompanies":"شركات السياحة",
+    "divingcenter":"مراكز الغوص",
+    "more":"المزيد",
+    "mostattractions":"اشهر المعالم السياحية",
+    "weather":"الطقس على مدار العام",
+    "videoLib":"مكتبة الفيديو"
+  },
+  "CityDetails":{
+    "plantrip":"التخطيط للرحلة",
+    "entertainement": "أنشطة ترفيهية",
+    "onMap":"الموقع علي الخريطة"
+  },
+  "GovHome":{
+    "nationalProject":"المشروعات القومية بالمحافظة"
+  },
+  "SideMenu":
+  {
+    "Title":"الرئيسية",
+    "ArLanguage": "العربية",
+    "EnLanguage": "الإنجليزية",
+    "FrLanguage": "الفرنسية",
+    "Language": "اللغة",
+    "signin": "تسجيل الدخول",
+    "home": "الرئيسية",
+    "news": "الأخبار",
+    "profile": "الصفحة الشخصية",
+    "about": "عن البوابة",
+    "logout": "تسجيل خروج"
+  },
+  "lang":{
+    "dir":"rtl"
+  }
+ 
+}

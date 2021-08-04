@@ -1,0 +1,77 @@
+ion-card{
+    border-radius: 20px;
+}
+ion-col{
+    ion-icon{
+        display: flex;
+        justify-self: flex-end;
+        font-size: 20px;
+        color: #295380;
+    }
+    p{
+        margin-block: 0px;
+    }
+}
+.colButtonDe{
+    align-self: center;
+    text-align: end;
+    [dir = "rtl"] & {
+        .decreaseButton{
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding: 10px;
+            padding-block: 10px;
+            padding-inline: 12px;
+            color: #011a61;
+        }
+    }
+    [dir = "ltr"] & {
+        .decreaseButton{
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding: 10px;
+            padding-block: 10px;
+            padding-inline: 12px;
+            color: #011a61;
+        }
+    }
+}
+.colButtonIn{
+    align-self: center;
+    text-align: center;
+    [dir = "rtl"] & {
+        .increaseButton{
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding-block: 10px;
+            padding-inline: 12px;
+            color: #011a61;
+        }
+    }
+    [dir = "ltr"] & {
+        .increaseButton{
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding-block: 10px;
+            padding-inline: 12px;
+            color: #011a61;
+        }
+    }
+}
+.total{
+    justify-content: center;
+    margin-top: 20px;
+    color: #011a61;
+}
+.rowButton{
+    justify-content: center;
+    margin-block-start: 20px;
+    button{
+        background: #011a61d1;
+        color: white;
+        width: 30%;
+        padding-block: 10px;
+        padding-inline: 20px;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,41 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-advanced-http": {
+      "PACKAGE_NAME": "southsinai.gov.eg"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "southsinai.gov.eg"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "southsinai.gov.eg"
+    },
+    "cordova-plugin-ionic-webview": {
+      "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+",
+      "PACKAGE_NAME": "southsinai.gov.eg"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "southsinai.gov.eg"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "southsinai.gov.eg"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "southsinai.gov.eg"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "southsinai.gov.eg"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "southsinai.gov.eg"
+    }
+  }
+}

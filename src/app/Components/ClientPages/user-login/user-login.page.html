@@ -1,0 +1,38 @@
+<ion-content>
+  <ion-grid class="logo">
+    <ion-img src="../../../../assets/images/logo.jpeg"></ion-img>
+    <ion-label>{{"Clients.SignUp" | translate}}</ion-label>
+  </ion-grid>
+  <ion-grid class="fields">
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col size="10" class="colLabel">
+        <ion-label>{{'Clients.Email' | translate}} </ion-label><ion-label class="asstr">*</ion-label>
+        <ion-input type="text" placeholder="{{'Clients.Email' | translate}}" [(ngModel)]="Email" id="Email">
+        </ion-input>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col size="9" class="colLabel" *ngIf="passBool == false">
+        <ion-label>{{'Clients.Password' | translate}} </ion-label><ion-label class="asstr">*</ion-label>
+        <ion-input type="password" placeholder="{{'Clients.Password' | translate}}" [(ngModel)]="Password"
+          id="Password"></ion-input>
+      </ion-col>
+      <ion-col size="9" class="colLabel" *ngIf="passBool == true">
+        <ion-label>{{'Clients.Password' | translate}} </ion-label><ion-label class="asstr">*</ion-label>
+        <ion-input type="text" placeholder="{{'Clients.Password' | translate}}" [(ngModel)]="Password" id="Password">
+        </ion-input>
+      </ion-col>
+      <ion-col size="1" class="colLabel" style="align-self: flex-end" *ngIf="passBool == false" (click)="showPass()">
+        <ion-icon name="eye-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="1" class="colLabel" style="align-self: flex-end" *ngIf="passBool == true" (click)="showPass()">
+        <ion-icon name="eye-off-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <ion-button (click)="submit()">{{'Clients.SignUp' | translate}}</ion-button>
+  </ion-grid>
+</ion-content>

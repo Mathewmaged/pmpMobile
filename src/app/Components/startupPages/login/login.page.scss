@@ -1,0 +1,53 @@
+ion-content{
+    --background: url("../../../../assets/images/WhatsAppImage.jpeg") no-repeat center/cover;
+    --padding-top: 0px;
+}
+.TitleAr{
+    display: grid;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 20vh; 
+}
+.TitleEn{
+    display: grid;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 25vh;
+}
+.smallTitle{
+    font-size: 12pt;
+}
+.mainTitle{
+    font-size: 18pt;
+}
+ion-grid{
+    position: relative;
+    top: 35vh;
+    background: #011a6182;
+    padding-block: 40px;
+}
+.lang{
+    display: grid;
+    color: white;
+    text-align: center;
+    // position: relative;
+    // top: 35vh;
+}
+.selectLang{
+    // position: relative;
+    // top: 38vh;
+    width: 90%;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    height: 35px;
+    padding: 10px;
+    color: black;
+    margin-top: 10px;
+}
+ion-fab-button{
+    --background: #011a6182;
+    --box-shadow: transparent;
+}

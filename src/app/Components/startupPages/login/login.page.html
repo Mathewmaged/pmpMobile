@@ -1,0 +1,26 @@
+<ion-content>
+<!-- <div class="TitleAr">
+  <ion-label class="smallTitle">مرحبا بك في التطبيق الرسمي</ion-label>
+  <ion-label class="mainTitle">لمحافظة جنوب سيناء</ion-label>
+</div>
+<div class="TitleEn">
+  <ion-label class="smallTitle">Welcome to</ion-label>
+  <ion-label class="mainTitle">South of Sinai Official App</ion-label>
+</div> -->
+<ion-grid>
+<div class="lang">
+  <ion-label class="smallTitle">اختار اللغة</ion-label>
+  <ion-label class="smallTitle">choose langauge</ion-label>
+</div>
+<ion-select placeholder="Select Language" class="selectLang"
+interface="popover" [(ngModel)]="selectedValues">
+  <ion-select-option value="1">العربية</ion-select-option>
+  <ion-select-option value="2">ُEnglish</ion-select-option>
+</ion-select>
+</ion-grid>
+<ion-fab vertical="bottom" horizontal="start" slot="fixed" (click)="setLang()">
+  <ion-fab-button>
+    <ion-icon name="arrow-forward-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+</ion-content>

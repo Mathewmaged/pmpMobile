@@ -1,0 +1,113 @@
+<ion-content>
+  <ion-grid class="logo">
+    <ion-img src="../../../../assets/images/logo.jpeg"></ion-img>
+    <ion-label>{{"Clients.SignUp" | translate}}</ion-label>
+  </ion-grid>
+  <ion-grid class="wlcMsg">
+    <ion-row>
+      <ion-label>{{"Clients.welcomeMsg" | translate}}</ion-label>
+    </ion-row>
+    <ion-row>
+      <ion-label>{{"Clients.freeAcc" | translate}}</ion-label>
+    </ion-row>
+  </ion-grid>
+  <ion-grid class="fields">
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col size="10" class="colLabel">
+        <ion-label>{{'Clients.Name' | translate}} </ion-label><ion-label class="asstr">*</ion-label>
+        <ion-input type="text" placeholder="{{'Clients.Name' | translate}} " [(ngModel)]="Name" id="Name"></ion-input>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col size="10" class="colLabel">
+        <ion-label>{{'Clients.Email' | translate}} </ion-label><ion-label class="asstr">*</ion-label>
+        <ion-input type="text" placeholder="{{'Clients.Email' | translate}}" [(ngModel)]="Email" id="Email">
+        </ion-input>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col size="10" class="colLabel">
+        <ion-label>{{'Clients.Gender' | translate}} </ion-label><ion-label class="asstr">*</ion-label>
+        <ion-select placeholder="{{'Clients.Gender' | translate}}" interface="popover" [(ngModel)]="Gender">
+          <ion-select-option value="m">{{'Clients.male' | translate}}</ion-select-option>
+          <ion-select-option value="f">{{'Clients.female' | translate}}</ion-select-option>
+        </ion-select>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col size="10" class="colLabel">
+        <ion-label>{{'Clients.Age' | translate}} </ion-label>
+        <ion-datetime  placeholder="{{'Clients.Age' | translate}}" [(ngModel)]="Age" id="Age"></ion-datetime>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col size="10" class="colLabel">
+        <ion-label>{{'Clients.Phone' | translate}} </ion-label><ion-label class="asstr">*</ion-label>
+        <ion-input type="text" placeholder="{{'Clients.Phone' | translate}}" [(ngModel)]="Phone" id="Phone">
+        </ion-input>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col size="9" class="colLabel" *ngIf="passBool == false">
+        <ion-label>{{'Clients.Password' | translate}} </ion-label><ion-label class="asstr">*</ion-label>
+        <ion-input type="password" placeholder="{{'Clients.Password' | translate}}" [(ngModel)]="Password"
+          id="Password"></ion-input>
+      </ion-col>
+      <ion-col size="9" class="colLabel" *ngIf="passBool == true">
+        <ion-label>{{'Clients.Password' | translate}} </ion-label><ion-label class="asstr">*</ion-label>
+        <ion-input type="text" placeholder="{{'Clients.Password' | translate}}" [(ngModel)]="Password" id="Password">
+        </ion-input>
+      </ion-col>
+      <ion-col size="1" class="colLabel" style="align-self: flex-end" *ngIf="passBool == false" (click)="showPass()">
+        <ion-icon name="eye-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="1" class="colLabel" style="align-self: flex-end" *ngIf="passBool == true" (click)="showPass()">
+        <ion-icon name="eye-off-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col size="9" class="colLabel" *ngIf="confPassBool == false">
+        <ion-label>{{'Clients.confirmPass' | translate}} </ion-label><ion-label class="asstr">*</ion-label>
+        <ion-input type="password" placeholder="{{'Clients.confirmPass' | translate}}" [(ngModel)]="confPass"
+          id="confPass"></ion-input>
+      </ion-col>
+      <ion-col size="9" class="colLabel" *ngIf="confPassBool == true">
+        <ion-label>{{'Clients.confirmPass' | translate}} </ion-label><ion-label class="asstr">*</ion-label>
+        <ion-input type="text" placeholder="{{'Clients.confirmPass' | translate}}" [(ngModel)]="confPass" id="confPass">
+        </ion-input>
+      </ion-col>
+      <ion-col size="1" class="colLabel" (click)="showConfirmPass()" *ngIf="confPassBool == false"
+        style="align-self: flex-end">
+        <ion-icon name="eye-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="1" class="colLabel" (click)="showConfirmPass()" *ngIf="confPassBool == true"
+        style="align-self: flex-end">
+        <ion-icon name="eye-off-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <ion-row style="margin-bottom: 20px">
+      <ion-col size="1"></ion-col>
+      <ion-col size="10" class="colLabel">
+        <ion-label>{{'Clients.Address' | translate}} </ion-label><ion-label class="asstr">*</ion-label>
+        <ion-input type="text" placeholder="{{'Clients.Address' | translate}}" [(ngModel)]="Address" id="Address">
+        </ion-input>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <ion-button (click)="submit()">{{'Clients.SignUp' | translate}}</ion-button>
+  </ion-grid>
+</ion-content>

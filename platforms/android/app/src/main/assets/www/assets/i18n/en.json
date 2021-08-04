@@ -1,0 +1,48 @@
+{
+  "HELLO": 
+  {
+    "hello":"hello"
+  },
+  "Nav":
+  {
+    "NavTitle":"The legal portal for Egyptian legislation"
+  },
+  "Home":{
+    "cittLable":"Governorate cities",
+    "Learnabout":"Learn about",
+    "airborts":"airports",
+    "hotels":"hotels",
+    "restaurant":"restaurants",
+    "Tourismcompanies":"Tourism companies",
+    "divingcenter":"Diving centers",
+    "more":"more",
+    "mostattractions":"The most famous tourist attractions",
+    "weather":"Weather throughout the year",
+    "videoLib":"Video Library"
+  },
+  "CityDetails":{
+    "plantrip":"Plan the trip",
+    "entertainement": "Entertainement",
+    "onMap":"On Map"
+  },
+  "GovHome":{
+    "nationalProject":"National projects in the governorate"
+  },
+  "SideMenu":
+  {
+    "Title":"Main",
+    "ArLanguage": "Arabic",
+    "EnLanguage": "English",
+    "FrLanguage": "French",
+    "Language": "Language",
+    "signin": "Sign in",
+    "home": "Home",
+    "news": "News",
+    "profile": "Profile",
+    "about": "About the portal",
+    "logout": "Log out"
+  },
+  "lang":{
+    "dir":"ltr"
+  }
+}

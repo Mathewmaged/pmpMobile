@@ -1,0 +1,36 @@
+<ion-content>
+  <ion-card *ngFor="let item of cartList">
+    <ion-row>
+      <ion-col size="6" style="padding: 0px;"><img src="../../../../assets/images/logo.jpeg" style="vertical-align: middle;"></ion-col>
+      <ion-col size="6" style="display: grid;">
+        <!-- <ion-icon name="close-circle" (click)="removeItem(item)"></ion-icon> -->
+        <ion-label *ngIf="registerService.setDir == 'rtl'" class="title">{{item.itemNameA}}</ion-label>
+        <ion-label *ngIf="registerService.setDir == 'ltr'" class="title">{{item.itemNameE}}</ion-label>
+        <p *ngIf="registerService.setDir == 'rtl'" class="title">{{item.descriptionA}}</p>
+        <p *ngIf="registerService.setDir == 'ltr'" class="title">{{item.descriptionE}}</p>
+        <!-- <ion-label *ngIf="registerService.setDir == 'rtl'" class="title">{{item.colorNameA}}</ion-label>
+        <ion-label *ngIf="registerService.setDir == 'ltr'" class="title">{{item.colorNameE}}</ion-label> -->
+        <ion-label class="title">{{item.itemPrice}}</ion-label>
+        <!-- <ion-row dir="{{registerService.setDir}}" style="margin-top: 10px;">
+          <ion-col size="12">
+            <ion-label>{{'item.count' | translate}} </ion-label>
+          </ion-col>
+          <ion-col size="6">
+            <ion-label type="number" disabled >{{item.itemCount}}</ion-label>
+          </ion-col>
+          <ion-col size="3" class="colButtonDe">
+            <button (click)="decrease(item.id)" class="decreaseButton">-</button>
+          </ion-col>
+          <ion-col size="3" class="colButtonIn">
+            <button (click)="increase(item.id)" class="increaseButton">+</button>
+          </ion-col>
+        </ion-row> -->
+        <ion-row>
+          <button class="submitButton" (click)="addToCard(item.itemId)">{{"item.addToCart" | translate}}</button>
+        </ion-row>
+      </ion-col>
+      
+    </ion-row>
+    
+  </ion-card>
+</ion-content>

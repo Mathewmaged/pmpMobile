@@ -1,0 +1,22 @@
+<ion-content>
+  <ion-grid>
+    <ion-row *ngFor="let item of items">
+      <ion-card (click)="goToItemDetails(item.id)">
+        <ion-header>
+          <img src="../../../../assets/images/logo.jpeg">
+        </ion-header>
+        <div style="display: grid;margin-block: 5px;text-align: start;margin-inline-start: 10px;">
+          <ion-label *ngIf="registerService.setDir == 'rtl'" class="cat">{{item.catNameA}}</ion-label>
+          <ion-label *ngIf="registerService.setDir == 'ltr'" class="cat">{{item.catNameE}}</ion-label>
+          <ion-label *ngIf="registerService.setDir == 'rtl'" class="title">{{item.nameA}}</ion-label>
+          <ion-label *ngIf="registerService.setDir == 'ltr'" class="title">{{item.nameE}}</ion-label>
+          <p *ngIf="registerService.setDir == 'rtl'">{{item.descriptionA}}</p>
+          <p *ngIf="registerService.setDir == 'ltr'">{{item.descriptionE}}</p>
+          <ion-label>{{item.price}}</ion-label>
+          <ion-label *ngIf="registerService.setDir == 'rtl'">{{item.shopNameA}}</ion-label>
+          <ion-label *ngIf="registerService.setDir == 'ltr'">{{item.shopNameE}}</ion-label>
+        </div>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
+</ion-content>

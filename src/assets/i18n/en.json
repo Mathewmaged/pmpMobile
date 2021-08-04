@@ -1,0 +1,50 @@
+{
+  "HELLO": 
+  {
+    "hello":"hello"
+  },
+  "Clients":{
+    "login":"login",
+    "createAccount":"Create account",
+    "SignUp":"Sign up",
+    "welcomeMsg":"welcome to PMP !",
+    "freeAcc":"create your free account now",
+    "Name":"Name",
+    "Email":"E-mail",
+    "Gender":"Gender",
+    "Age":"Birth Date",
+    "Phone":"Phone",
+    "Password":"Password",
+    "confirmPass":"Confirm Password",
+    "Address":"Address",
+    "male":"Male",
+    "female":"Female",
+    "myOrders":"My Orders"
+  },
+  "Home":{
+    "Category":"Category",
+    "viewAll":"view all",
+    "bestSeller":"best seller"
+  },
+  "SideMenu":{
+    "Title":"Main",
+    "ArLanguage": "Arabic",
+    "EnLanguage": "English",
+    "FrLanguage": "French",
+    "Language": "Language",
+    "signin": "Sign in",
+    "home": "Home",
+    "news": "News",
+    "profile": "Profile",
+    "about": "About the portal",
+    "logout": "Log out"
+  },
+  "item":{
+    "addToCart":"Add To Cart",
+    "color":"Color",
+    "count":"Count",
+    "avalibleCount":"Available number",
+    "total":"Total",
+    "confirm":"confirm"
+  }
+}

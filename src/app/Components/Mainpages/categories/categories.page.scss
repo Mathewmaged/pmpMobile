@@ -1,0 +1,28 @@
+ion-grid{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    ion-row{
+        width: 44%;
+        margin: auto;
+        margin-top: 15px;
+        overflow: hidden;
+        border-radius: 10px;
+        height: 140px;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .myOverlay {
+            bottom: 85px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            z-index: 99;
+            padding-block: 3px;
+            color: white;
+            background: #115dce66;
+        }
+    }
+}

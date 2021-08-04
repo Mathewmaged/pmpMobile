@@ -1,0 +1,43 @@
+.rowbackground{
+    background: rgb(41 , 83, 128);
+}
+ion-toolbar{
+    --background: rgb(41 , 83, 128);
+}
+.colTitle{
+    align-self: center;
+    display: flex;
+    color: white;
+    background: white;
+    height: 32px;
+    border-radius: 7px;
+}
+ion-header{
+    height: 45px;
+}
+ion-col{
+    text-align: center;
+    padding: 0px;
+    display: flex;
+}
+.govImg{
+    height: 120px;
+}
+.rowImg{
+    height: 55px;
+    width: 55px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 50%;
+    border: 1px solid #C19F67;
+    background: #F9F7F2;
+}
+.menuItems{
+    background: #f2f4f9;
+    margin-top: 10px;
+    ion-col{
+        justify-content: center;
+        color: #1562b1;
+        padding-block: 5px;
+    }
+}

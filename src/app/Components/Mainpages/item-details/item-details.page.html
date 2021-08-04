@@ -1,0 +1,43 @@
+<ion-content>
+  <ion-slides #mySlider id="mySlider" (ionSlidesDidLoad)="slidesDidLoad(mySlider)" pager loop="true" [options]="slideOpts" >
+    <!-- <ion-slide *ngFor="let item of sliderData" (click)="navigat(item.id)">
+      <ion-card class="myCard"> 
+        <img src="{{photoPath}}News/Photo/{{item.id}}/{{item.photo}}" /> 
+          <div class="myOverlaySLider"  >
+            <div class="card-subtitle">{{item.title}}</div>
+          </div>
+      </ion-card>
+      </ion-slide> -->
+      <ion-slide>
+        <img src="../../../../assets/images/makeBusiness.jpeg">
+      </ion-slide>
+      <ion-slide>
+        <img src="../../../../assets/images/WhatsAppImage.jpeg">
+      </ion-slide>
+      <ion-slide>
+        <img src="../../../../assets/images/earnPoints.jpeg">
+      </ion-slide>
+  </ion-slides> 
+  <ion-row class="dataRow">
+    <ion-label *ngIf="registerService.setDir == 'rtl'" class="cat">{{itemData.catNameA}}</ion-label>
+    <ion-label *ngIf="registerService.setDir == 'ltr'" class="cat">{{itemData.catNameE}}</ion-label>
+    <ion-label *ngIf="registerService.setDir == 'rtl'" class="title">{{itemData.nameA}}</ion-label>
+    <ion-label *ngIf="registerService.setDir == 'ltr'" class="title">{{itemData.nameE}}</ion-label>
+    <p *ngIf="registerService.setDir == 'rtl'">{{itemData.descriptionA}}</p>
+    <p *ngIf="registerService.setDir == 'ltr'">{{itemData.descriptionE}}</p>
+    <ion-label *ngIf="registerService.setDir == 'rtl'">{{itemData.shopNameA}}</ion-label>
+    <ion-label *ngIf="registerService.setDir == 'ltr'">{{itemData.shopNameE}}</ion-label>
+    <ion-label>{{itemData.price}}</ion-label>
+    <ion-label>{{itemData.discount}}</ion-label>
+    <!-- <ion-label *ngIf="registerService.setDir == 'rtl'">{{itemData.shopNameA}}</ion-label>
+    <ion-label *ngIf="registerService.setDir == 'ltr'">{{itemData.shopNameE}}</ion-label> -->
+    <!-- <ion-button>to Cart</ion-button> -->
+  </ion-row>
+  <ion-row class="rowModal" (click)="initModal()"> 
+    <ion-col size="1"></ion-col>
+    <ion-col size="9">{{"item.addToCart" | translate}}</ion-col>
+    <ion-col size="2">
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </ion-col>
+  </ion-row>
+</ion-content>

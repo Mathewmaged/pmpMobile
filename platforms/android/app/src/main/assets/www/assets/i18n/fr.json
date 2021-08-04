@@ -1,0 +1,38 @@
+{
+  "HELLO": 
+  {
+    "hello":"Bonjour"
+  },
+  "Nav":
+  {
+    "NavTitle":"Le portail juridique de la législation égyptienne"
+  },
+  "SideMenu":
+  {
+    "Title":"Principale",
+    "ArLanguage": "Arabe",
+    "EnLanguage": "anglaise",
+    "FrLanguage": "française",
+    "Language": "Langue",
+    "signin": "Se connecter",
+    "home": "principale",
+    "news": "Nouvelles",
+    "profile": "Profil",
+    "about": "À propos du portail",
+    "logout": "Se déconnecter"
+  },
+  "about-us":
+  {
+    "who": "Qui sommes-nous? La législation et les décisions égyptiennes, depuis 1828, comprennent les décisions de la Cour suprême de cassation et administrative et les fatwas du Conseil d'État et une bibliothèque qui contient les numéros du journal officiel et les faits égyptiens sont mis à jour quotidiennement. Une banque de données pour la législation et les dispositions qui permet à tout utilisateur de n'importe où dans le monde de rechercher, récupérer, analyser et relier ces informations sous des formes multiples et intégrées dès que possible et à partir de ses sources officielles d'origine et avec une précision absolue en termes de caractère officiel et d'épuisement."
+  },
+  "Home":{
+    "legislation": "Base de la législation",
+    "Fatwas" : "Fatwas et décisions",
+    "Legal Bulletin" : "Bulletin juridique",
+    "legal services" : "services juridiques",
+    "News" : "La dernière législation",
+    "search" : "Groupes spécialisés",
+    "Brief": "À propos du portail",
+    "Subscription" : "Comment souscrire"
+  }
+}

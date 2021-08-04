@@ -1,0 +1,11 @@
+<ion-content>
+  <ion-grid>
+    <ion-row *ngFor="let item of categories" (click)="goToItemListByCategory(item.id)">
+      <img src="../../../../assets/images/logo.jpeg">
+      <div class="myOverlay">
+        <ion-label *ngIf="registerService.setDir == 'rtl'">{{item.nameA}}</ion-label>
+        <ion-label *ngIf="registerService.setDir == 'ltr'">{{item.nameE}}</ion-label>
+      </div>
+    </ion-row>
+  </ion-grid>
+</ion-content>

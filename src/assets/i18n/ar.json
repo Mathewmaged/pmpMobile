@@ -1,0 +1,50 @@
+{ 
+  "HELLO": 
+  {
+    "hello":"مرحبا"
+  },
+  "Clients":{
+    "login":"تسجيل الدخول",
+    "createAccount":"إنشاء حساب",
+    "SignUp":"اشتراك",
+    "welcomeMsg":"مرحبا في  PMP !",
+    "freeAcc":"انشاء حسابك مجانا الان",
+    "Name":"الاسم",
+    "Email":"البريد الالكتروني",
+    "Gender":"النوع",
+    "Age":"تاريخ الميلاد",
+    "Phone":"تليفون",
+    "Password":"كلمة السر",
+    "confirmPass":"تأكيد كلمة السر",
+    "Address":"العنوان",
+    "male":"ذكر",
+    "female":"انثي",
+    "myOrders":"طلباتي"
+  },
+  "Home":{
+    "Category":"الفئة",
+    "viewAll":"الكل",
+    "bestSeller":"الاكثر مبيعا"
+  },
+  "SideMenu":{
+    "Title":"الرئيسية",
+    "ArLanguage": "العربية",
+    "EnLanguage": "الإنجليزية",
+    "FrLanguage": "الفرنسية",
+    "Language": "اللغة",
+    "signin": "تسجيل الدخول",
+    "home": "الرئيسية",
+    "news": "الأخبار",
+    "profile": "الصفحة الشخصية",
+    "about": "عن البوابة",
+    "logout": "تسجيل خروج"
+  },
+  "item":{
+    "addToCart":"اضافة الي السلة",
+    "color":"اللون",
+    "count":"العدد",
+    "avalibleCount":"العدد المتوفر",
+    "total":"الاجمالي",
+    "confirm":"تاكيد"
+  }
+}
